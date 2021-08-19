@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NeuralHash JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * { font-family: 'Roboto', sans-serif; }
+        .small {
+            font-size: small;
+            margin-bottom: 0.4em;
+        }
+        .image {
+            width:360px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <p class="small">first run may be slow because of the model not being cached yet</p>
+    <label for="input_file">input image:</label>
+    <input id="input_file" type='file' accept="image/*"><br><br>
+    <img alt="" class="image" id="input_image">
+    <p id="log"></p>
+    <script src="script.js"></script>
+</body>
+</html>
